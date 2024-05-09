@@ -1,0 +1,10 @@
+brainkiller@Naveenbalaji:~/jenkins$ cat docker-compose.yml
+version: '3'
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins-con
+    ports:
+      - '4343:8080'
+brainkiller@Naveenbalaji:~/jenkins$ docker-compose up -d
+Starting jenkins-con ... done
